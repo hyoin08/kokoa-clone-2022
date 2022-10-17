@@ -18,6 +18,11 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/chat1.css";
+@import "screens/chat2.css";
+@import "screens/chat3.css";
+@import "screens/chat4.css";
+@import "screens/chat5.css";
 
 body {
   color: #2e363e;
