@@ -48,19 +48,6 @@
   animation: fadeInAnimation 0.5s ease-out forwards;
 }
 
-.message-row:nth-child(2),
-.message-row:nth-child(2) .message__info {
-  animation-delay: 0.7s;
-}
-.message-row:nth-child(3),
-.message-row:nth-child(3) .message__info {
-  animation-delay: 0.8s;
-}
-.message-row:nth-child(4),
-.message-row:nth-child(4) .message__info {
-  animation-delay: 0.9s;
-}
-
 .message-row img {
   width: 50px;
   height: 50px;
@@ -87,7 +74,7 @@
   display: flex;
   align-items: flex-end;
   margin-bottom: 25px;
-  animation: messagePopup 0.5s ease-out forwards;
+  animation: fadeInAnimation 0.5s ease-out forwards;
 }
 
 .message__time,
@@ -110,7 +97,7 @@
 
 .message-row--own .message__info {
   flex-direction: row-reverse;
-  animation: messagePopup--own 0.5s ease-out forwards;
+  animation: fadeInAnimation 0.5s ease-out forwards;
 }
 
 .reply {
@@ -206,35 +193,5 @@
   to {
     transform: none;
     opacity: 1;
-  }
-}
-
-@keyframes messagePopup {
-  0% {
-    transform: scale(0, 1) translate(-60%, 0%);
-  }
-  50% {
-    transform: scale(0.5, 1) translate(-30%, 0%);
-  }
-  75% {
-    transform: scale(1, 1) translate(3%, 0%);
-  }
-  100% {
-    transform: scale(1, 1) translate(0%, 0%);
-  }
-}
-
-@keyframes messagePopup--own {
-  0% {
-    transform: scale(0, 1) translate(60%, 0%);
-  }
-  50% {
-    transform: scale(0.5, 1) translate(30%, 0%);
-  }
-  75% {
-    transform: scale(1, 1) translate(-3%, 0%);
-  }
-  100% {
-    transform: scale(1, 1) translate(0%, 0%);
   }
 }
